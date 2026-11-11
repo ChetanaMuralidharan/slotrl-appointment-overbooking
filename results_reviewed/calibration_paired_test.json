@@ -1,0 +1,7 @@
+{
+  "policy": "expected_load",
+  "paired_days": 4000,
+  "mean_calibrated_minus_raw": 7.7525,
+  "median_calibrated_minus_raw": 0.0,
+  "wilcoxon_pvalue": 3.745415640569351e-30
+}

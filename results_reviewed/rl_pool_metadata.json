@@ -1,0 +1,9 @@
+{
+  "rl_train_rows": 12864,
+  "rl_eval_rows": 13586,
+  "rl_train_dates": 3,
+  "rl_eval_dates": 3,
+  "rl_train_max_date": "2016-06-03 00:00:00+00:00",
+  "rl_eval_min_date": "2016-06-06 00:00:00+00:00",
+  "rl_eval_max_date": "2016-06-08 00:00:00+00:00"
+}

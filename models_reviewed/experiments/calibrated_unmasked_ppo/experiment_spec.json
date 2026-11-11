@@ -1,0 +1,9 @@
+{
+  "name": "calibrated_unmasked_ppo",
+  "probability_column": "p_noshow_cal",
+  "algorithm": "ppo",
+  "allow_invalid_actions": true,
+  "gamma": 0.99,
+  "ent_coef": 0.01,
+  "learning_rate": 0.0003
+}

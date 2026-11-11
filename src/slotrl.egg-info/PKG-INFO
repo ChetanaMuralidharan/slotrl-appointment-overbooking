@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: slotrl
+Version: 0.1.0
+Summary: Revenue-aware appointment overbooking with calibrated no-show prediction and masked reinforcement learning
+Requires-Python: >=3.10
+License-File: LICENSE
+Dynamic: license-file

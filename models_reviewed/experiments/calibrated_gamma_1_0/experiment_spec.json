@@ -1,0 +1,9 @@
+{
+  "name": "calibrated_gamma_1_0",
+  "probability_column": "p_noshow_cal",
+  "algorithm": "maskable_ppo",
+  "allow_invalid_actions": false,
+  "gamma": 1.0,
+  "ent_coef": 0.01,
+  "learning_rate": 0.0003
+}

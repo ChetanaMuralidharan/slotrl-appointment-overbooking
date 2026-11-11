@@ -1,0 +1,9 @@
+probability_source,policy,mean_reward,ci_low,ci_high,mean_overtime,mean_declines
+calibrated,always_overbook,2136.705,2130.5925,2142.8326875,5.36575,0.0
+calibrated,expected_load,2332.3625,2325.5687500000004,2339.3855000000003,2.10125,0.00125
+calibrated,single_book,1885.75,1878.6625,1892.95,0.0,4.0
+calibrated,threshold,2297.01,2289.915,2304.361125,2.694,0.0
+raw,always_overbook,2136.705,2130.5925,2142.8326875,5.36575,0.0
+raw,expected_load,2324.61,2317.8067499999997,2331.7370625000003,2.234,0.0
+raw,single_book,1885.75,1878.6625,1892.95,0.0,4.0
+raw,threshold,2297.01,2289.915,2304.361125,2.694,0.0

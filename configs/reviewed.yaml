@@ -1,0 +1,53 @@
+paths:
+  raw_csv: data/raw/KaggleV2-May-2016.csv
+  processed_dir: data/processed_reviewed
+  model_dir: models_reviewed
+  results_dir: results_reviewed
+data:
+  train_fraction: 0.60
+  calibration_fraction: 0.20
+  rl_train_fraction_of_test: 0.50
+  random_seed: 20261106
+model:
+  calibration_method: sigmoid
+  xgb:
+    n_estimators: 300
+    max_depth: 4
+    learning_rate: 0.04
+    subsample: 0.85
+    colsample_bytree: 0.85
+    min_child_weight: 5
+    reg_lambda: 1.0
+    objective: binary:logistic
+    eval_metric: logloss
+    n_jobs: 4
+environment:
+  n_slots: 16
+  slot_capacity: 2
+  requests_per_day: 20
+  double_booking_cap: 8
+  visit_value: 150.0
+  overtime_cost: 60.0
+  decline_cost: 20.0
+  reward_scale: 1000.0
+  invalid_action_penalty: 50.0
+training:
+  total_timesteps: 300000
+  n_envs: 1
+  seeds: [11, 22, 33, 44, 55]
+  learning_rate: 0.0003
+  gamma: 0.99
+  ent_coef: 0.01
+  batch_size: 64
+  parallel_workers: 3
+  record_learning_curves: true
+  learning_curve_interval: 10000
+experiments:
+  enabled:
+    - raw_masked_ppo
+    - calibrated_unmasked_ppo
+    - calibrated_gamma_1_0
+evaluation:
+  n_seeds: 20
+  days_per_seed: 200
+  bootstrap_reps: 2000
